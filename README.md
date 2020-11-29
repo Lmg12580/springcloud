@@ -6,11 +6,11 @@
 
 #### 软件架构
 
-基础架构 springboot 2.3.6
-项目框架 springcloud Hoxton.SR9
+jdk 1.8
+基础框架 springboot 2.3.6
+项目架构 springcloud Hoxton.SR9
 数据库 mysql
 项目管理 maven 3.6
-jdk 1.8
 
 #### 使用说明
 
