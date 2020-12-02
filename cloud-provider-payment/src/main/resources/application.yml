@@ -6,9 +6,18 @@ spring:
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource #当前数据源操作类型
     driver-class-name: com.mysql.jdbc.Driver   #mysql驱动包
-    url: jdbc:mysql://192.168.31.53:3306/springcloud?autoReconnect=true&useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai&useSSL=false
+    url: jdbc:mysql://localhost:3306/springcloud?autoReconnect=true&useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai&useSSL=false
     username: root
     password: Lmg12580
+
+eureka:
+  client:
+    # 表示是否将自己注册进eureka默认为true
+    register-with-eureka: true
+    # 是否从EurekaServer抓取已有的注册信息，默认为true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
 
 mybatis:
   mapper-locations: classpath:mapper/*.xml

@@ -12,6 +12,11 @@
     <artifactId>cloud-provider-payment</artifactId>
 
     <dependencies>
+        <!--eureka-client-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+        </dependency>
         <!--引入自己的公共包-->
         <dependency>
             <groupId>com.wangyg.cloud</groupId>
