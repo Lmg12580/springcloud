@@ -8,11 +8,11 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
 /**
- * Fegin接口
+ * Feign接口
  *
  * @author wangyg
  * @version 1.0.0
- * @description Fegin接口
+ * @description Feign接口
  * @copyright Copyright ©️ 2020
  */
 @Component
