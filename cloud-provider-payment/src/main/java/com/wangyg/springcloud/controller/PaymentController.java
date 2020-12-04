@@ -49,4 +49,10 @@ public class PaymentController {
 			return new CommonResult(500, "插入失败", result);
 		}
 	}
+
+	@GetMapping(value = "/payment/feign/timeout")
+	public String paymentFeignTimeout(){
+		try { Thread.sleep(3000); } catch (Exception e) { e.printStackTrace(); }
+		return serverPort;
+	}
 }

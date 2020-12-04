@@ -6,3 +6,12 @@ eureka:
     register-with-eureka: false
     service-url:
       defaultZone: http://eureka8761.com:8761/eureka,http://eureka8762.com:8762/eureka
+
+ribbon:
+  ReadTimeout: 5000     #指的是建立连接所需要的时间
+  ConnectTimeout: 5000  #指的是建立连接后从服务器读取到可用资源所用的时间
+
+logging:
+  level:
+    # 日志以什么级别监控哪个接口
+    com.wangyg.springcloud.service.PaymentFeignService: debug
