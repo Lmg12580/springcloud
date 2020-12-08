@@ -15,6 +15,8 @@
       <module>cloud-eureka-server2</module>
       <module>cloud-provider-payment2</module>
       <module>cloud-consumer-fegin-order</module>
+      <module>cloud-provider-hystrix-payment</module>
+      <module>cloud-consumer-feign-hystrix-order</module>
   </modules>
   <packaging>pom</packaging>
 
