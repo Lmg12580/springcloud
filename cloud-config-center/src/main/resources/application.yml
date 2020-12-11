@@ -1,0 +1,22 @@
+server:
+  port: 3344
+spring:
+  application:
+    name: cloud-config-center
+  cloud:
+    config:
+      server:
+        git:
+          # 这个就是你平时clone项目的地址,https和ssh地址都可以
+          uri: https://github.com/Lmg12580/springcloud.git
+          # 这个地址是进入仓库后配置文件的目录地址
+          search-paths:
+            - config
+      label: master
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://eureka8761.com:8761/eureka
