@@ -60,4 +60,9 @@ public class PaymentController {
 		try { Thread.sleep(3000); } catch (Exception e) { e.printStackTrace(); }
 		return serverPort;
 	}
+
+	@GetMapping(value = "/payment/zipkin")
+	public String paymentZipkin(){
+		return "hello zipkin";
+	}
 }
