@@ -16,10 +16,10 @@ spring:
 
   # rabbitmq相关配置
   rabbitmq:
-    host: localhost
+    host: 172.16.11.109
     port: 5672
-    username: guest
-    password: guest
+    username: admin
+    password: admin
 
 eureka:
   client:

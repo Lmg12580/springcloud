@@ -11,10 +11,10 @@ spring:
       uri: http://localhost:3344 #配置中心地址 合起来就是http://localhost:3344/master/config-dev.yml
 
   rabbitmq:
-    host: localhost
+    host: 172.16.11.109
     port: 5672
-    username: guest
-    password: guest
+    username: admin
+    password: admin
 
 eureka:
   client:

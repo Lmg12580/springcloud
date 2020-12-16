@@ -1,0 +1,28 @@
+server:
+  port: 8803
+spring:
+  cloud:
+    stream:
+      binders:
+        defaultRabbit:
+          type: rabbit
+          environment:
+            spring:
+              rabbitmq:
+                host: 172.16.11.109
+                port: 5672
+                username: admin
+                password: admin
+      bindings:
+        input:
+          destination: demoExchange
+          content-type: application/json
+          binder: defaultRabbit
+          group: testGroup
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://eureka8761.com:8761/eureka
