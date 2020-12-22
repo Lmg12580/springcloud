@@ -28,6 +28,7 @@
     <module>cloudalibaba-provider-payment</module>
     <module>cloudalibaba-provider-payment2</module>
     <module>cloudalibaba-consumer-nacos-order</module>
+    <module>cloudalibaba-config-nacos-client</module>
   </modules>
   <packaging>pom</packaging>
 
