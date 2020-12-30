@@ -29,6 +29,7 @@
     <module>cloudalibaba-provider-payment2</module>
     <module>cloudalibaba-consumer-nacos-order</module>
     <module>cloudalibaba-config-nacos-client</module>
+      <module>cloudalibaba-sentinel-service</module>
   </modules>
   <packaging>pom</packaging>
 
