@@ -1,0 +1,53 @@
+server:
+  port: 2001
+
+spring:
+  application:
+    name: seata-order-service
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource #当前数据源操作类型
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/seata_order?autoReconnect=true&useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai&useSSL=false
+    username: root
+    password: Lmg12580
+
+
+#全局事物相关配置
+#seata:
+#  enabled: true
+#  tx-service-group: default
+#  #enable-auto-data-source-proxy: false
+#  config:
+#    type: nacos
+#    nacos:
+#      namespace: a104e091-eeac-41da-b887-2b580a526899
+#      serverAddr: 172.16.11.109:8848
+#      group: SEATA_GROUP
+#      username: "nacos"
+#      password: "Nacos2020"
+#      cluster: default
+#  registry:
+#    type: nacos
+#    nacos:
+#      application: seata-server
+#      server-addr: localhost:8848
+#      group : DEFAULT_GROUP
+#      #namespace: a104e091-eeac-41da-b887-2b580a526899
+#      username: "nacos"
+#      password: "nacos"
+#      cluster: default
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+
+feign:
+  hystrix:
+    enabled: true
+
+#seata:
+seata:
+  tx-service-group: my_test_tx_group
